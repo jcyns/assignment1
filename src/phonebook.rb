@@ -4,7 +4,7 @@ class PhoneBook
     end
   
     def add(name, number, is_listed)
-      return false unless valid_number?(number)
+      return false unless validNumber(number)
       
       if @entries[number]
         # If the number exists
@@ -45,7 +45,7 @@ class PhoneBook
   
     private
   
-    def valid_number?(number)
+    def validNumber(number)
       number.match?(/^\d{3}-\d{3}-\d{4}$/)
     end
   end
