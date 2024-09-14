@@ -1,4 +1,4 @@
-def fibonacci(n)
+def fib(n)
     return [] if n == 0
     return [0] if n == 1
     
@@ -9,7 +9,7 @@ def fibonacci(n)
     fib
   end
   #change the number in the parenthesis to change the output
-  puts "fib(15) == #{fibonacci(15).join(', ')}"
+  puts "fib(15) == #{fib(15).join(', ')}"
 
 def isPalindrome(n)
     n_str = n.to_s
