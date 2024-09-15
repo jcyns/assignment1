@@ -10,7 +10,6 @@ def fib(n)
   end
   #change the number in the parenthesis to change the output
   puts "fib(15) == #{fib(15).join(', ')}"
-
 def isPalindrome(n)
     n_str = n.to_s
     n_str == n_str.reverse
@@ -18,19 +17,16 @@ end
 [10, 101, 120210].each do |n|
     puts "isPalindrome(#{n}) == #{isPalindrome(n)}"
   end
-
 def nthmax(n, a)
     return nil if n < 0 || a.empty?
   
   unique_sorted = a.uniq.sort.reverse
   unique_sorted[n]
 end
-
 puts "nthmax(0, [1,2,3,0]) == #{nthmax(0, [1,2,3,0])}"
 puts "nthmax(1, [3,2,1,0]) == #{nthmax(1, [3,2,1,0])}"
 puts "nthmax(2, [7,3,4,5]) == #{nthmax(2, [7,3,4,5])}"
 puts "nthmax(5, [1,2,3]) == #{nthmax(5, [1,2,3])}"
-
 def freq(s)
     return '' if s.empty?
  
@@ -57,7 +53,6 @@ puts "zipHash([1], [2]) == #{zipHash([1], [2]).inspect}"
 puts "zipHash([1, 5], [2, 4]) == #{zipHash([1, 5], [2, 4]).inspect}"
 puts "zipHash([1], [2, 3]) == #{zipHash([1], [2, 3]).inspect}"
 puts "zipHash([\"Umar\", \"Justin\", \"Yuhong\"], [\"prof\", \"TA\", \"TA\"]) == #{zipHash(["Umar", "Justin", "Yuhong"], ["prof", "TA", "TA"]).inspect}"
-
 def hashToArray(hash)
     hash.map { |key, value| [key, value] }
 end
